@@ -27,7 +27,7 @@ function Home() {
             posts.map((post,i) => {
               return (
                 <div key={i} className="col-md-4 mb-4">
-                 <Link to={`/blog/${convertToSlug(post.title)}`}>
+                 <Link to={`/blog/${convertToSlug(post.title)}/${post.id}`}>
                  <div className="card" style={{height:'100%'}}>
                     <div className="card-header">
                       {post.id}

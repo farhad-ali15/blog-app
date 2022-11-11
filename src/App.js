@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import './App.css'
 import { BrowserRouter, Routes, Route ,Link} from 'react-router-dom'
 import BlogDetail from "./pages/BlogDetail";
+import AddBlog from "./pages/AddBlog";
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/add-blog" element={<AddBlog />}></Route>
 
-          <Route path="/blog/:slug" element={<BlogDetail />}></Route>
+          <Route path="/blog/:slug/:id" element={<BlogDetail />}></Route>
             
           
         </Routes>
