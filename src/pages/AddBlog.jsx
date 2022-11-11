@@ -16,6 +16,16 @@ const handleSubmit=(e)=>{
         body:description,
         userId:1
     }
+if (title==''){
+    alert('Please write any title')
+    return
+}
+if (description==''){
+    alert('Please write any description')
+    return
+}
+
+
     fetch('https://jsonplaceholder.typicode.com/posts',{
         method:'POST',
         body:JSON.stringify(blog),
