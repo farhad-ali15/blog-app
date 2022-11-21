@@ -5,6 +5,7 @@ import BlogDetail from "./pages/BlogDetail";
 import AddBlog from "./pages/AddBlog";
 import BlogList from "./pages/BlogList";
 import EditBlog from "./pages/EditBlog";
+import RegisterUser from "./pages/RegisterUser";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/blog/:slug/:id" element={<BlogDetail />}></Route>
           <Route path="/admin" element={<BlogList />}></Route>
           <Route path="/edit-blog/:id" element={<EditBlog />}></Route>
+          <Route path="/register" element={<RegisterUser />}></Route>
             
           
         </Routes>
