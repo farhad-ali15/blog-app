@@ -28,7 +28,7 @@ function RegisterUser() {
             <Header />
             <form onSubmit={formik.handleSubmit} >
                 <div className="row mb-3">
-                    <label for="fullname" className="col-sm-2 col-form-label">Full Name</label>
+                    <label htmlfor="fullname" className="col-sm-2 col-form-label">Full Name</label>
                     <div className="col-sm-10">
                         <input onChange={formik.handleChange} value={formik.values.fullname} onBlur={formik.handleBlur} type="text" name='fullname' className="form-control" id="fullname" />
                         <span style={{ color: 'red' }}>{formik.touched.fullname && formik.errors.fullname ? formik.errors.fullname : null}</span>
@@ -36,21 +36,21 @@ function RegisterUser() {
                 </div>
 
                 <div className="row mb-3">
-                    <label for="email" className="col-sm-2 col-form-label">Email</label>
+                    <label htmlfor="email" className="col-sm-2 col-form-label">Email</label>
                     <div className="col-sm-10">
                         <input onChange={formik.handleChange} value={formik.values.email} onBlur={formik.handleBlur} type="text" name='email' className="form-control" id="email" />
                         <span style={{ color: 'red' }}>{formik.touched.email && formik.errors.email ? formik.errors.email : null}</span>
                     </div>
                 </div>
                 <div className="row mb-3">
-                    <label for="address" className="col-sm-2 col-form-label">Address</label>
+                    <label htmlfor="address" className="col-sm-2 col-form-label">Address</label>
                     <div className="col-sm-10">
                         <input onChange={formik.handleChange} value={formik.values.address} onBlur={formik.handleBlur} type="text" name='address' className="form-control" id="address" />
                         <span style={{ color: 'red' }}>{formik.touched.address && formik.errors.address ? formik.errors.address : null}</span>
                     </div>
                 </div>
                 <div className="row mb-3">
-                    <label for="phone" className="col-sm-2 col-form-label">Phone Number</label>
+                    <label htmlfor="phone" className="col-sm-2 col-form-label">Phone Number</label>
                     <div className="col-sm-10">
                         <input onChange={formik.handleChange} value={formik.values.phone} onBlur={formik.handleBlur} type="text" name='phone' className="form-control" id="phone" />
                         <span style={{ color: 'red' }}>{formik.touched.phone && formik.errors.phone ? formik.errors.phone : null}</span>

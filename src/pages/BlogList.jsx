@@ -39,7 +39,7 @@ function BlogList() {
     <div>
       <Header />
 
-      <table class="table">
+      <table className="table">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -48,7 +48,7 @@ function BlogList() {
             <th scope="col">Action</th>
           </tr>
         </thead>
-        <tbody class="table-group-divider">
+        <tbody className="table-group-divider">
 
           {
             posts.map(post => {
@@ -59,7 +59,7 @@ function BlogList() {
                   <td>{truncate(post.body, 50)}</td>
                   <td>
                     <button onClick={() => handleClick(post.id)} className='btn me-3'><i className="bi bi-trash3"></i></button>
-                    <Link to={`/edit-blog/${post.id}`}><i class="bi bi-pencil-square"></i></Link>
+                    <Link to={`/edit-blog/${post.id}`}><i className="bi bi-pencil-square"></i></Link>
                   </td>
                 </tr>
 

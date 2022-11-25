@@ -29,6 +29,9 @@ function Header() {
                 <li className="btn ">
                   <Link to='/register' className="nav-link active" aria-current="page" >Register</Link>
                 </li>
+                <li className="btn ">
+                  <Link to='/bank' className="nav-link active" aria-current="page" >Bank</Link>
+                </li>
               </ul>
             </div>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">

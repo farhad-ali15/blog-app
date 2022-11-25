@@ -56,21 +56,21 @@ function EditBlog() {
 
             <div>
                 {
-                    message ? <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    message ? <div className="alert alert-warning alert-dismissible fade show" role="alert">
                         <strong>Success!</strong> {message}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div> : ''
                 }
 
                 <form onSubmit={(e) => handleUpdate(e)}>
                     <div className="row mb-3">
-                        <label for="title" className="col-sm-2 col-form-label">Blog Title</label>
+                        <label htmlfor="title" className="col-sm-2 col-form-label">Blog Title</label>
                         <div className="col-sm-10">
                             <input onChange={(e) => setPost({ ...post, title: e.target.value })} value={post.title} type="text" name='title' className="form-control" id="title" />
                         </div>
                     </div>
                     <div className="row mb-3">
-                        <label for="description" className="col-sm-2 col-form-label" >Blog Description</label>
+                        <label htmlfor="description" className="col-sm-2 col-form-label" >Blog Description</label>
                         <div className="col-sm-10">
                             <input onChange={(e) => setPost({ ...post, body: e.target.value })} value={post.body} type="text" name='description' className="form-control" id="description" />
                         </div>
