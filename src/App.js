@@ -6,7 +6,9 @@ import AddBlog from "./pages/AddBlog";
 import BlogList from "./pages/BlogList";
 import EditBlog from "./pages/EditBlog";
 import RegisterUser from "./pages/RegisterUser";
-import Bank from "./pages/Bank";
+import { Counter } from "./pages/Counter";
+
+
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
           <Route path="/admin" element={<BlogList />}></Route>
           <Route path="/edit-blog/:id" element={<EditBlog />}></Route>
           <Route path="/register" element={<RegisterUser />}></Route>
-          <Route path="/bank" element={<Bank />}></Route>
+          <Route path="/counter" element={<Counter />}></Route>
+          
             
           
         </Routes>

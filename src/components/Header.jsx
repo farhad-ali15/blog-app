@@ -30,8 +30,9 @@ function Header() {
                   <Link to='/register' className="nav-link active" aria-current="page" >Register</Link>
                 </li>
                 <li className="btn ">
-                  <Link to='/bank' className="nav-link active" aria-current="page" >Bank</Link>
+                  <Link to='/counter' className="nav-link active" aria-current="page" >Counter</Link>
                 </li>
+              
               </ul>
             </div>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
