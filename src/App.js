@@ -7,6 +7,8 @@ import BlogList from "./pages/BlogList";
 import EditBlog from "./pages/EditBlog";
 import RegisterUser from "./pages/RegisterUser";
 import { Counter } from "./pages/Counter";
+import TodoList from "./pages/TodoList";
+import EditTodo from "./pages/EditTodo";
 
 
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="/edit-blog/:id" element={<EditBlog />}></Route>
           <Route path="/register" element={<RegisterUser />}></Route>
           <Route path="/counter" element={<Counter />}></Route>
+          <Route path="/todos" element={<TodoList />}></Route>
+          <Route path="/edit-todo/:id" element={<EditTodo />}></Route>
           
             
           
